@@ -32,7 +32,7 @@ namespace Livi
 		  
 		Regex gex =new Regex(patternA);
 				
-			
+		Console.WriteLine("Подсчёт карточек...");
 		for (i=0;i<instar.Length;i++)
 		{
 			//Console.WriteLine(a);
@@ -43,19 +43,21 @@ namespace Livi
 				if (sochi.Success)
 				{
 					a++;
-					Console.WriteLine(instar[i-1] +"__________"+a);
+					//Console.WriteLine(instar[i-1] +"__________"+a);
 					
 				} //end if
 				
 			}// end if
 		} //end for
-		Console.WriteLine("Press enter to continue...");
-		Console.ReadKey();
+	
+		Console.WriteLine("Готово.");
+		
 		kartochka[] karar=new kartochka[a+1];
 		
 			a=0;
+			Console.WriteLine("Создание массива карточек...");
 		
-		for (i=0;i<instar.Length;i++)
+	 for (i=0;i<instar.Length;i++)
 		{
 			
 			if (instar[i]!="")
@@ -66,13 +68,13 @@ namespace Livi
 					a++;
 					karar[a]=new kartochka();
 					karar[a].setmethod(Convert.ToInt32(instar[i-1]),i-1);
-			        karar[a].consoleprint();
+			       // karar[a].consoleprint();
 				} //end if
 				
 			}// end if
 		} //end for
 		
-   
+   Console.WriteLine("Готово.");
 		
 		
 		
@@ -80,5 +82,7 @@ namespace Livi
 		
 	
 	} //end srtpar method
-	}// end srtparccl class
+	}// end srtparccl class 
+}//end name space
+
 
