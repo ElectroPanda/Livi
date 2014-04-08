@@ -20,19 +20,20 @@ namespace Livi
 		public int iStartLineN;
 		int [] iaStartTime;
 		int [] iaEndTime;
-		string[] safulltext;
+		string[] safulltext=new string[1];
 		
 		public void consoleprint()
 		{
 			Console.WriteLine();
 			Console.WriteLine("kartochka #"+this.iSerNumber+"  Nachalo v stroke #"+iStartLineN);
 			
+			
 		} // end consoleprint
 		
 		public kartochka()
 		{
 			this.iSerNumber=0;
-			//this.safulltext[80];
+			//this.safulltext[]=new string[1];
 		} //end kartochka konstruktor
 		
 		public void setmethod(int i, int b)
@@ -44,6 +45,7 @@ namespace Livi
 		
 		public void settext(string a)
 		{
+			Array.Resize(ref this.safulltext,this.safulltext.Length+1);
 			this.safulltext[this.safulltext.Length]=a;
 		}//end settext method
 	} //end kartochka class
