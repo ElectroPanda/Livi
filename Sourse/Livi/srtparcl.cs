@@ -75,10 +75,17 @@ namespace Livi
 		} //end for
 		
    Console.WriteLine("Готово.");
+   Console.ReadKey();
 		
 		
-		
-		
+   for (a=1;a<karar.Length-1;a++)
+   {
+   	for (i=(karar[a].iStartLineN+2);i!=(karar[a+1].iStartLineN-1);i++)
+   	{
+   		//karar[a].settext(instar[i]);
+   		Console.WriteLine(instar[i]);
+   	} //end for
+   }//end for
 		
 	
 	} //end srtpar method

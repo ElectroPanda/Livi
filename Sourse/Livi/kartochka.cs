@@ -32,6 +32,7 @@ namespace Livi
 		public kartochka()
 		{
 			this.iSerNumber=0;
+			//this.safulltext[80];
 		} //end kartochka konstruktor
 		
 		public void setmethod(int i, int b)
