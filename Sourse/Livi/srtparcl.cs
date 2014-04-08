@@ -82,9 +82,10 @@ namespace Livi
    {
    	for (i=(karar[a].iStartLineN+2);i!=(karar[a+1].iStartLineN-1);i++)
    	{
-   		//karar[a].settext(instar[i]);
-   		Console.WriteLine(instar[i]);
+   		karar[a].settext(instar[i]);
+   		//Console.WriteLine(instar[i]);
    	} //end for
+   	karar[a].consoleprint();
    }//end for
 		
 	

@@ -26,7 +26,10 @@ namespace Livi
 		{
 			Console.WriteLine();
 			Console.WriteLine("kartochka #"+this.iSerNumber+"  Nachalo v stroke #"+iStartLineN);
-			
+			for (int i=1;i<this.safulltext.Length;i++)
+			{
+				Console.WriteLine(this.safulltext[i]);
+			}//end for
 			
 		} // end consoleprint
 		
@@ -46,7 +49,7 @@ namespace Livi
 		public void settext(string a)
 		{
 			Array.Resize(ref this.safulltext,this.safulltext.Length+1);
-			this.safulltext[this.safulltext.Length]=a;
+			this.safulltext[this.safulltext.Length-1]=a;
 		}//end settext method
 	} //end kartochka class
 }
