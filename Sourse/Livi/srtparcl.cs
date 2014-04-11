@@ -86,6 +86,7 @@ namespace Livi
    		//Console.WriteLine(instar[i]);
    	} //end for
    	karar[a].minuslastline();
+   	karar[a].arrwordcreate();
    	karar[a].consoleprint();
    }//end for
 	
@@ -96,8 +97,9 @@ namespace Livi
    }// end for
    
    karar[karar.Length-1].minuslastline();
-   karar[karar.Length-1].consoleprint();
-	} //end srtpar method
+   karar[karar.Length-1].arrwordcreate();
+   karar[karar.Length-1].consoleprint();	
+	 } //end srtpar method
 	}// end srtparccl class 
 }//end name space
 
