@@ -37,7 +37,7 @@ namespace Livi
 		{
 			//Console.WriteLine(a);
 			//Console.WriteLine(instar[i]);
-			if (instar[i]!="")
+			if (string.IsNullOrEmpty(instar[i])==false)//if (instar[i]!="")
 			{
 				Match sochi = gex.Match(instar[i]);
 				if (sochi.Success)
@@ -60,7 +60,7 @@ namespace Livi
 	 for (i=0;i<instar.Length;i++)
 		{
 			
-			if (instar[i]!="")
+	 	if (string.IsNullOrEmpty(instar[i])==false)//if (instar[i]!="")
 			{
 				Match sochi = gex.Match(instar[i]);
 				if (sochi.Success)
@@ -87,7 +87,13 @@ namespace Livi
    	} //end for
    	karar[a].consoleprint();
    }//end for
-		
+	
+   for (i=(karar[karar.Length-1].iStartLineN+2);i!=(instar.Length);i++)
+   {
+   	karar[karar.Length-1].settext(instar[i]);
+   	
+   }// end for
+   karar[karar.Length-1].consoleprint();
 	
 	} //end srtpar method
 	}// end srtparccl class 
