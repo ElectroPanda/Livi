@@ -15,17 +15,20 @@ namespace Livi
 	/// </summary>
 	public class heart
 	{
-		kartochka[] heartarr=new kartochka[1];
+		public kartochka[] heartarr=new kartochka[2];
 		
-		public heart(kartochka[] a)
+		public void clonn (kartochka[] a)
 		{
 			Array.Resize(ref this.heartarr,a.Length);
 			kartochka[] heartarr = (kartochka[])a.Clone();
-			/*for (int i=1;i<=a.Length;i++)
-			     {
-			     	
-			     } //end for*/
-			
+		} //end clonn method
+		
+		public heart()
+		{
+			heartarr[1]=new kartochka();
+			//Array.Resize(ref this.heartarr,a.Length);
+			//kartochka[] heartarr = (kartochka[])a.Clone();
+					
 		}//end costruct
 		
 		public void printt()

@@ -38,7 +38,7 @@ namespace Livi
 			Console.Write(DateTime.Now.Second.ToString()+",");
 			Console.WriteLine(DateTime.Now.Millisecond.ToString());
 			
-			Console.ReadKey(true);
+			//Console.ReadKey(true);
 		}
 	}
 }
