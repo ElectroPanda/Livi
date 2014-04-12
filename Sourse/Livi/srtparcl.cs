@@ -16,6 +16,7 @@ namespace Livi
 	/// </summary>
 	public class srtparcl
 	{
+		 public heart brain=new heart();     
 		public void srtpar(string[] instar)
 	{
 		
@@ -28,7 +29,9 @@ namespace Livi
 		int a;
 		string patternA=@"([-]{2,})([>]{1,})";
 		i=0;
-        a=0;		
+        a=0;
+        
+         
 		  
 		Regex gex =new Regex(patternA);
 				
@@ -99,10 +102,19 @@ namespace Livi
    karar[karar.Length-1].minuslastline();
    karar[karar.Length-1].arrwordcreate();
    karar[karar.Length-1].consoleprint();
-   heart brain=new heart();
-   brain.clonn(karar);
-   brain.printt();
+   
+   //this.brain=new heart();
+   this.brain.clonn(karar);
+   this.brain.printt();
+   Console.ReadKey();
+   
 	 } //end srtpar method
+		
+		public heart returnheart()
+		{
+			
+			return this.brain;
+		}
 	}// end srtparccl class 
 }//end name space
 

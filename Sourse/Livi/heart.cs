@@ -20,7 +20,10 @@ namespace Livi
 		public void clonn (kartochka[] a)
 		{
 			Array.Resize(ref this.heartarr,a.Length);
-			kartochka[] heartarr = (kartochka[])a.Clone();
+			this.heartarr = (kartochka[])a.Clone();
+			this.heartarr[0]=new kartochka();
+	
+			
 		} //end clonn method
 		
 		public heart()
@@ -34,6 +37,12 @@ namespace Livi
 		public void printt()
 		{
 			Console.WriteLine(this.heartarr.Length+"++++++++");
+			Console.ReadKey();
+			for (int i=1;i<this.heartarr.Length;i++)
+			{
+				this.heartarr[i].consoleprint();
+				
+			} //end for
 		} //end printt method
 	}//end class
 }//end name space

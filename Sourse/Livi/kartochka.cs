@@ -21,7 +21,7 @@ namespace Livi
 		int [] iaStartTime;
 		int [] iaEndTime;
 		string[] safulltext=new string[1];
-		string[] arrword=new string[1];
+		public string[] arrword=new string[1];
 		
 		public void consoleprint()
 		{
@@ -37,12 +37,14 @@ namespace Livi
 			{
 				Console.WriteLine(" {"+i+"} "+this.arrword[i]);
 			}//end for
-			
+			//Console.ReadKey();
 		} // end consoleprint
 		
 		public kartochka()
 		{
 			this.iSerNumber=0;
+			this.arrword[0]=" ";
+			this.safulltext[0]=" ";
 			//this.safulltext[]=new string[1];
 		} //end kartochka konstruktor
 		
