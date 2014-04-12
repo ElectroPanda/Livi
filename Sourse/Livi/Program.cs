@@ -19,6 +19,10 @@ namespace Livi
 	{
 		public static void Main(string[] args)
 		{
+			Console.Write(DateTime.Now.Hour.ToString()+":");
+			Console.Write(DateTime.Now.Minute.ToString()+":");
+			Console.Write(DateTime.Now.Second.ToString()+",");
+			Console.WriteLine(DateTime.Now.Millisecond.ToString());
 			string sSrtFullPath=@"";
 			if (args.Length==0){sSrtFullPath=@"C:\testfiles\srt\in\tiny.srt";}
 			else{sSrtFullPath=@"C:\testfiles\srt\in\"+args[0]+".srt";}
@@ -28,8 +32,12 @@ namespace Livi
 			
 			srtparcl comq =new srtparcl();
 			comq.srtpar(inFile);
+			Console.Write(DateTime.Now.Hour.ToString()+":");
+			Console.Write(DateTime.Now.Minute.ToString()+":");
+			Console.Write(DateTime.Now.Second.ToString()+",");
+			Console.WriteLine(DateTime.Now.Millisecond.ToString());
 			
-			Console.ReadKey(true);
+			//Console.ReadKey(true);
 		}
 	}
 }

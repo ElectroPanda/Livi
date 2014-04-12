@@ -32,7 +32,7 @@ namespace Livi
 		  
 		Regex gex =new Regex(patternA);
 				
-		Console.WriteLine("Подсчёт карточек...");
+		Console.Write("Подсчёт карточек...");
 		for (i=0;i<instar.Length;i++)
 		{
 			//Console.WriteLine(a);
@@ -50,12 +50,12 @@ namespace Livi
 			}// end if
 		} //end for
 	
-		Console.WriteLine("Готово.");
+		Console.Write("Готово.");
 		
 		kartochka[] karar=new kartochka[a+1];
 		
 			a=0;
-			Console.WriteLine("Создание массива карточек...");
+			Console.Write("    Создание массива карточек...");
 		
 	 for (i=0;i<instar.Length;i++)
 		{
@@ -75,7 +75,7 @@ namespace Livi
 		} //end for
 		
    Console.WriteLine("Готово.");
-   Console.ReadKey();
+   //Console.ReadKey();
 		
 		
    for (a=1;a<karar.Length-1;a++)

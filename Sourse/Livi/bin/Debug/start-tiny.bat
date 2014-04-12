@@ -1,1 +1,2 @@
 Livi.exe tiny
+pause
