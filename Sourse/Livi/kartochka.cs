@@ -97,5 +97,13 @@ namespace Livi
 			}//end for
 			Array.Resize(ref this.arrword,this.arrword.Length-1);
 		}//end arrwordcreate method
+       
+		public void copymethod(kartochka a)
+		{
+			this.iSerNumber=a.iSerNumber;
+			this.iStartLineN=a.iStartLineN;
+			
+		} //end copy method
+
 	} //end kartochka class
-}
+}// end name space

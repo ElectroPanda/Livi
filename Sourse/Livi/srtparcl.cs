@@ -98,7 +98,9 @@ namespace Livi
    
    karar[karar.Length-1].minuslastline();
    karar[karar.Length-1].arrwordcreate();
-   karar[karar.Length-1].consoleprint();	
+   karar[karar.Length-1].consoleprint();
+   heart brain=new heart(karar);
+   brain.printt();
 	 } //end srtpar method
 	}// end srtparccl class 
 }//end name space
