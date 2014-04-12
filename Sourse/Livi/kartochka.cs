@@ -25,17 +25,17 @@ namespace Livi
 		
 		public void consoleprint()
 		{
-			//Console.WriteLine();
-			//Console.WriteLine("kartochka #"+this.iSerNumber+"  Nachalo v stroke #"+iStartLineN);
+			Console.WriteLine();
+			Console.WriteLine("kartochka #"+this.iSerNumber+"  Nachalo v stroke #"+iStartLineN);
 			
 			for (int i=0;i<this.safulltext.Length;i++)
 			{
-				//Console.WriteLine(i+") "+this.safulltext[i]);
+				Console.WriteLine(i+") "+this.safulltext[i]);
 			}//end for
 			
 			for (int i=0;i<this.arrword.Length;i++)
 			{
-				//Console.WriteLine(" {"+i+"} "+this.arrword[i]);
+				Console.WriteLine(" {"+i+"} "+this.arrword[i]);
 			}//end for
 			
 		} // end consoleprint
