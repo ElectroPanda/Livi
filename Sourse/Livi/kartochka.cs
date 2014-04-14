@@ -14,14 +14,14 @@ namespace Livi
 	/// <summary>
 	/// Description of kartochka.
 	/// </summary>
-	public class kartochka
+	public class kartochka //описывает объём текста отображаемый одномоментно
 	{
-		int iSerNumber;
-		public int iStartLineN;
-		int [] iaStartTime;
-		int [] iaEndTime;
-		string[] safulltext=new string[1];
-		public string[] arrword=new string[1];
+		int iSerNumber; // Порядковый номер карточки
+		public int iStartLineN; // Начало - номер строки с номером карточки
+		int [] iaStartTime; //Начало экспозиции
+		int [] iaEndTime; // Конец экспозиции
+		string[] safulltext=new string[1]; //Массив строк карточки
+		public string[] arrword=new string[1]; //Массив слов карточки
 		
 		public void consoleprint()
 		{
@@ -55,14 +55,14 @@ namespace Livi
 			
 		} // end kartochka setmethod
 		
-		public void settext(string a)
+		public void settext(string a) //Добавление строки к массиву строк карточки
 		{
 			Array.Resize(ref this.safulltext,this.safulltext.Length+1);
 			this.safulltext[this.safulltext.Length-2]=a;
 			//Array.Resize(ref this.safulltext,this.safulltext.Length-1);
 		}//end settext method
 		
-		public void minuslastline()
+		public void minuslastline() // Удаление последней строчки массива строк (только если она пуста)
 		{
 			if (string.IsNullOrEmpty(this.safulltext[this.safulltext.Length-1])==true)
 			{
@@ -71,30 +71,27 @@ namespace Livi
 			
 		} // end minuslastline
 		
-		public void arrwordcreate()
+		public void arrwordcreate() //Создание массива слов
 		{
 			int q=0;
-			for(int i=0;i<=this.safulltext.Length-1;i++)
+			for(int i=0;i<=this.safulltext.Length-1;i++) //обход всех строк в карточке
 			{
-				//q++;
-				Array.Resize(ref this.arrword,this.arrword.Length+1);
-				for(int a=0;a<=this.safulltext[i].Length-1;a++)
+				
+				Array.Resize(ref this.arrword,this.arrword.Length+1); //добавление ячейки в массив слов
+				for(int a=0;a<=this.safulltext[i].Length-1;a++) //обход БУКВ в обрабатываемоей строке 
 				{
-					
-					//Console.WriteLine(this.safulltext[i][a]);
-					
-					if ((this.safulltext[i][a]+"")==" ")
-					{q++;
-					Array.Resize(ref this.arrword,this.arrword.Length+1);
+												
+					if ((this.safulltext[i][a]+"")==" ")  //если активная карточка пробел
+					{q++; //увеличиваем индекс слова
+					Array.Resize(ref this.arrword,this.arrword.Length+1); //увеличиваем размер массива
 					}//end then
 					else
 					{
-						this.arrword[q]=this.arrword[q]+this.safulltext[i][a];
+						this.arrword[q]=this.arrword[q]+this.safulltext[i][a]; //прибавляем букву к слову
 					} //end else
 				}//end for
 				q++;
-				//Array.Resize(ref this.arrword,this.arrword.Length+1);
-			
+				
 				
 			}//end for
 			Array.Resize(ref this.arrword,this.arrword.Length-1);

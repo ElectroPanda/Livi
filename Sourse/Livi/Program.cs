@@ -32,15 +32,15 @@ namespace Livi
 						
 			srtparcl comq =new srtparcl();
 			comq.srtpar(inFile);
-			Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-			//comq.returnheart().printt();
+			//Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			comq.brain.printt();
+			
 			Console.Write(DateTime.Now.Hour.ToString()+":");
 			Console.Write(DateTime.Now.Minute.ToString()+":");
 			Console.Write(DateTime.Now.Second.ToString()+",");
 			Console.WriteLine(DateTime.Now.Millisecond.ToString());
-			//Comparison.
 			
+			Console.WriteLine(args[0] +".srt  Обработан..."
 			Console.ReadKey(true);
 		}
 	}
