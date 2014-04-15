@@ -76,7 +76,7 @@ namespace Livi
    	} //end for
    	karar[a].minuslastline();
    	karar[a].arrwordcreate();
-   	karar[a].consoleprint();
+ 
    }//end for
 	
 	//Заполнение массива строк в последней карточке
@@ -88,10 +88,8 @@ namespace Livi
    
    karar[karar.Length-1].minuslastline();
    karar[karar.Length-1].arrwordcreate();
-   karar[karar.Length-1].consoleprint();
       
    this.brain.clonn(karar);
-   this.brain.printt();
    
    
 	 } //end srtpar method

@@ -35,7 +35,7 @@ namespace Livi
 			
 			for (int i=0;i<this.arrword.Length;i++)
 			{
-				Console.WriteLine(" {"+i+"} "+this.arrword[i]);
+				Console.WriteLine(" {"+i+"}_"+this.arrword[i]+"<");
 			}//end for
 			//Console.ReadKey();
 		} // end consoleprint
@@ -43,8 +43,8 @@ namespace Livi
 		public kartochka()
 		{
 			this.iSerNumber=0;
-			this.arrword[0]=" ";
-			this.safulltext[0]=" ";
+			this.arrword[0]="";
+			this.safulltext[0]="";
 			//this.safulltext[]=new string[1];
 		} //end kartochka konstruktor
 		
@@ -81,7 +81,7 @@ namespace Livi
 				for(int a=0;a<=this.safulltext[i].Length-1;a++) //обход БУКВ в обрабатываемоей строке 
 				{
 												
-					if ((this.safulltext[i][a]+"")==" ")  //если активная карточка пробел
+					if ((this.safulltext[i][a]+"")==" ")  //если активная буква пробел
 					{q++; //увеличиваем индекс слова
 					Array.Resize(ref this.arrword,this.arrword.Length+1); //увеличиваем размер массива
 					}//end then
