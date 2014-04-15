@@ -37,7 +37,7 @@ namespace Livi
 			{
 				Console.WriteLine(" {"+i+"}_"+this.arrword[i]+"<");
 			}//end for
-			//Console.ReadKey();
+          
 		} // end consoleprint
 		
 		public kartochka()
@@ -45,7 +45,7 @@ namespace Livi
 			this.iSerNumber=0;
 			this.arrword[0]="";
 			this.safulltext[0]="";
-			//this.safulltext[]=new string[1];
+			
 		} //end kartochka konstruktor
 		
 		public void setmethod(int i, int b)
@@ -59,7 +59,7 @@ namespace Livi
 		{
 			Array.Resize(ref this.safulltext,this.safulltext.Length+1);
 			this.safulltext[this.safulltext.Length-2]=a;
-			//Array.Resize(ref this.safulltext,this.safulltext.Length-1);
+			
 		}//end settext method
 		
 		public void minuslastline() // Удаление последней строчки массива строк (только если она пуста)

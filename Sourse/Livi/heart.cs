@@ -16,6 +16,7 @@ namespace Livi
 	public class heart
 	{
 		public kartochka[] heartarr=new kartochka[2];
+		public string[] saPublicNames=new string[1];
 		
 		public void clonn (kartochka[] a)
 		{
