@@ -112,7 +112,7 @@ namespace Livi
    	} //end for
    	karar[a].minuslastline();
    	karar[a].arrwordcreate();
- 
+   	karar[a].consoleprint();
    }//end for
 	
 	//Заполнение массива строк в последней карточке
@@ -122,10 +122,17 @@ namespace Livi
    	
    }// end for
    
+<<<<<<< HEAD
    karar[karar.Length-2].minuslastline();
    karar[karar.Length-2].arrwordcreate();
+=======
+   karar[karar.Length-1].minuslastline();
+   karar[karar.Length-1].arrwordcreate();
+   karar[karar.Length-1].consoleprint();
+>>>>>>> parent of 3c594b5... Промежуток-промежуточек
       
    this.brain.clonn(karar);
+   this.brain.printt();
    
    
 	 } //end srtpar method
