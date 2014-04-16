@@ -25,18 +25,21 @@ namespace Livi
 		string patternA=@"([-]{2,})([>]{1,})"; //Образец строки -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		string patternB=@"([:]{1,})";//Любая цифра хоть одна из всех безвыходных ситуаций
 >>>>>>> 99ad7e43d0da0727391dd1dfb5aafbaf30a8cb75
 =======
 		string patternB=@"([:]{1,})";//Любая цифра хоть одна из всех безвыходных ситуаций
 >>>>>>> 99ad7e43d0da0727391dd1dfb5aafbaf30a8cb75
+=======
+>>>>>>> parent of 51f6a82... Попытки-попыточки
 		i=0;
         a=0;
                 
 		  
 		Regex gex =new Regex(patternA);
-		Regex xeg =new Regex(patternB);
+						
 		//Подсчёт карточек в файле
 		for (i=0;i<instar.Length;i++) //Обход всех строк
 		{
@@ -65,6 +68,7 @@ namespace Livi
 				Match sochi = gex.Match(instar[i]);//Проверка строки
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if (sochi.Success)//Если в строке встречается паттерн 
 =======
 				Boolean kiiv=true;  if (i>1) {Match kiev=xeg.Match(instar[i-1]); kiiv=kiev.Success;}
@@ -76,6 +80,9 @@ namespace Livi
 				Boolean leparis=true; if(i>1){Match paris =gex.Match(instar[i-1]);leparis=paris.Success;}
 				if ((sochi.Success))//Если в строке встречается паттерн
 >>>>>>> 99ad7e43d0da0727391dd1dfb5aafbaf30a8cb75
+=======
+				if (sochi.Success)//Если в строке встречается паттерн 
+>>>>>>> parent of 51f6a82... Попытки-попыточки
 				{
 					if (kiiv==false)
 					{
