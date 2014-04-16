@@ -1,2 +1,0 @@
-Livi.exe big
-pause

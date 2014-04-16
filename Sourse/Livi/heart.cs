@@ -41,7 +41,7 @@ namespace Livi
 			
 			for (int i=1;i<this.heartarr.Length;i++)
 			{
-				this.heartarr[i].consoleprint();
+				this.heartarr[i-1].consoleprint();
 				
 			} //end for
 		} //end printt method
