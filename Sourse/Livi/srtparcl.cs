@@ -27,12 +27,15 @@ namespace Livi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		string patternB=@"([:]{1,})";//Любая цифра хоть одна из всех безвыходных ситуаций
 >>>>>>> 99ad7e43d0da0727391dd1dfb5aafbaf30a8cb75
 =======
 		string patternB=@"([:]{1,})";//Любая цифра хоть одна из всех безвыходных ситуаций
 >>>>>>> 99ad7e43d0da0727391dd1dfb5aafbaf30a8cb75
+=======
+>>>>>>> parent of 51f6a82... Попытки-попыточки
 =======
 >>>>>>> parent of 51f6a82... Попытки-попыточки
 =======
@@ -73,6 +76,7 @@ namespace Livi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if (sochi.Success)//Если в строке встречается паттерн 
 =======
 				Boolean kiiv=true;  if (i>1) {Match kiev=xeg.Match(instar[i-1]); kiiv=kiev.Success;}
@@ -84,6 +88,9 @@ namespace Livi
 				Boolean leparis=true; if(i>1){Match paris =gex.Match(instar[i-1]);leparis=paris.Success;}
 				if ((sochi.Success))//Если в строке встречается паттерн
 >>>>>>> 99ad7e43d0da0727391dd1dfb5aafbaf30a8cb75
+=======
+				if (sochi.Success)//Если в строке встречается паттерн 
+>>>>>>> parent of 51f6a82... Попытки-попыточки
 =======
 				if (sochi.Success)//Если в строке встречается паттерн 
 >>>>>>> parent of 51f6a82... Попытки-попыточки
