@@ -25,7 +25,7 @@ namespace Livi
 			Console.Write(DateTime.Now.Millisecond.ToString()+"  ");
 			
 			string sSrtFullPath=@"";
-			if (args.Length==0){sSrtFullPath=@"C:\testfiles\srt\in\cra.srt";} //tiny
+			if (args.Length==0){sSrtFullPath=@"C:\testfiles\srt\in\tiny.srt";} //tiny
 			else{sSrtFullPath=@"C:\testfiles\srt\in\"+args[0]+".srt";}
 			
 			string[] inFile =System.IO.File.ReadAllLines(sSrtFullPath);
