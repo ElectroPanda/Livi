@@ -2,7 +2,7 @@
  * Парсер srt файлов
  * Created by SharpDevelop.
  * User: Илья
- * Date: 03.04.2014
+ * Date: 18.04.2014
  * Time: 20:57
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
