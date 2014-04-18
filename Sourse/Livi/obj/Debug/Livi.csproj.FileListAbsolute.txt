@@ -1,0 +1,20 @@
+C:\Users\Илья\Documents\SharpDevelop Projects4\Livi\Livi\bin\Debug\Livi.exe
+C:\Users\Илья\Documents\SharpDevelop Projects4\Livi\Livi\bin\Debug\Livi.pdb
+C:\Users\Илья\Documents\SharpDevelop Projects4\Livi\Livi\obj\Debug\Livi.csprojResolveAssemblyReference.cache
+C:\Users\Илья\Documents\SharpDevelop Projects4\Livi\Livi\obj\Debug\Livi.exe
+C:\Users\Илья\Documents\SharpDevelop Projects4\Livi\Livi\obj\Debug\Livi.pdb
+C:\Users\Admin\Documents\EP\GitHub\Livi\Sourse\Livi\bin\Debug\Livi.exe
+C:\Users\Admin\Documents\EP\GitHub\Livi\Sourse\Livi\bin\Debug\Livi.pdb
+C:\Users\Admin\Documents\EP\GitHub\Livi\Sourse\Livi\obj\Debug\Livi.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\EP\GitHub\Livi\Sourse\Livi\obj\Debug\Livi.exe
+C:\Users\Admin\Documents\EP\GitHub\Livi\Sourse\Livi\obj\Debug\Livi.pdb
+C:\Users\Илья\Documents\GitHub\Livi\Sourse\Livi\obj\Debug\Livi.csprojResolveAssemblyReference.cache
+C:\Users\Илья\Documents\GitHub\Livi\Sourse\Livi\obj\Debug\Livi.exe
+C:\Users\Илья\Documents\GitHub\Livi\Sourse\Livi\obj\Debug\Livi.pdb
+C:\Users\Илья\Documents\GitHub\Livi\Sourse\Livi\bin\Debug\Livi.exe
+C:\Users\Илья\Documents\GitHub\Livi\Sourse\Livi\bin\Debug\Livi.pdb
+D:\илья\Desktop\Livi\Livi\Sourse\Livi\obj\Debug\Livi.csprojResolveAssemblyReference.cache
+D:\илья\Desktop\Livi\Livi\Sourse\Livi\obj\Debug\Livi.exe
+D:\илья\Desktop\Livi\Livi\Sourse\Livi\bin\Debug\Livi.exe
+D:\илья\Desktop\Livi\Livi\Sourse\Livi\bin\Debug\Livi.pdb
+D:\илья\Desktop\Livi\Livi\Sourse\Livi\obj\Debug\Livi.pdb
