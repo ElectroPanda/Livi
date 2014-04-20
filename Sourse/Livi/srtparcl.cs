@@ -17,8 +17,9 @@ namespace Livi
 	/// </summary>
 	public class srtparcl
 	{
-		public heart brain=new heart();     
-		public void srtpar(string[] instar)
+		public heart brain=new heart();   
+		Boolean sudno;
+		public void srtpar(string[] instar)	   	
 	{
 	
 		int i;
@@ -32,15 +33,20 @@ namespace Livi
 		Regex gex =new Regex(patternA);
 		Regex xeg =new Regex(patternB);
 		//Подсчёт карточек в файле
-		for (i=0;i<instar.Length;i++) //Обход всех строк
+		for (i=1;i<instar.Length;i++) //Обход всех строк
 		{
 			
 			if (string.IsNullOrEmpty(instar[i])==false) //Если строка НЕ пуста и НЕ является пробелом 
 			{
 				Match sochi = gex.Match(instar[i]);  //Проверка строки
+				Match yalta =gex.Match(instar[i-1]);
+				sudno=yalta.Success;
+				
 				if (sochi.Success)//Если в строке встречается паттерн 
 				{
-					a++; //Увеличиваем счётчик на единицу					
+					if (sudno==false){
+					a++; //Увеличиваем счётчик на единицу
+					    }
 				} //end if
 				
 			}// end if
@@ -51,20 +57,24 @@ namespace Livi
 		a=0; //Обнуление счётчика
 			
      //Создание массива карточек			
-	 for (i=0;i<instar.Length;i++) //Обход всех строк
+	 for (i=1;i<instar.Length;i++) //Обход всех строк
 		{
 			
 	 	if (string.IsNullOrEmpty(instar[i])==false) //Если строка НЕ пуста и НЕ является пробелом 
 			{
 				Match sochi = gex.Match(instar[i]);//Проверка строки
-				Boolean kiiv=true;  if (i>1) {Match kiev=xeg.Match(instar[i-1]); kiiv=kiev.Success;}
-				Boolean leparis=true; if(i>1){Match paris =gex.Match(instar[i-1]);leparis=paris.Success;}
-				if ((sochi.Success & kiiv))//Если в строке встречается паттерн
+				//Boolean kiiv=true;  if (i>1) {Match kiev=xeg.Match(instar[i-1]); kiiv=kiev.Success;}
+				//Boolean leparis=true; if(i>1){Match paris =gex.Match(instar[i-1]);leparis=paris.Success;}
+				Match lazarevskoe=gex.Match(instar[i-1]);
+				sudno=lazarevskoe.Success;
+				if ((sochi.Success))//Если в строке встречается паттерн
 				{
-					a++; //Увеличиваевм счётчик 
+					if (sudno==false){
+					a++; //Увеличиваевм счётчик
 					karar[a]=new kartochka(); //Создание нового объекта карточки
 					karar[a].setmethod(Convert.ToInt32(instar[i-1]),i-1); //Задание первого номера и первой строки
-			       
+			       // i++;
+					}
 				} //end if
 				
 			}// end if
