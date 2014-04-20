@@ -39,7 +39,7 @@ namespace Livi
 			Console.Write(DateTime.Now.Second.ToString()+",");
 			Console.WriteLine(DateTime.Now.Millisecond.ToString());
 			
-			Console.WriteLine(args[0] +".srt  Обработан..."
+			Console.WriteLine(args[0] +".srt  Обработан...");
 			Console.ReadKey(true);
 		}
 	}
