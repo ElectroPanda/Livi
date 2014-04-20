@@ -38,10 +38,10 @@ namespace Livi
 		public void printt()
 		{
 			Console.WriteLine(this.heartarr.Length+"++++++++");
-			Console.ReadKey();
+			
 			for (int i=1;i<this.heartarr.Length;i++)
 			{
-				this.heartarr[i-1].consoleprint();
+				this.heartarr[i].consoleprint();
 				
 			} //end for
 		} //end printt method

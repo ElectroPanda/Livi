@@ -2,7 +2,7 @@
  * Парсер srt файлов
  * Created by SharpDevelop.
  * User: Илья
- * Date: 03.04.2014
+ * Date: 20.04.2014
  * Time: 20:57
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
@@ -22,7 +22,7 @@ namespace Livi
 			Console.Write(DateTime.Now.Hour.ToString()+":");
 			Console.Write(DateTime.Now.Minute.ToString()+":");
 			Console.Write(DateTime.Now.Second.ToString()+",");
-			Console.WriteLine(DateTime.Now.Millisecond.ToString());
+			Console.Write(DateTime.Now.Millisecond.ToString()+"  ");
 			
 			string sSrtFullPath=@"";
 			if (args.Length==0){sSrtFullPath=@"C:\testfiles\srt\in\tiny.srt";} //tiny
@@ -37,9 +37,9 @@ namespace Livi
 			Console.Write(DateTime.Now.Hour.ToString()+":");
 			Console.Write(DateTime.Now.Minute.ToString()+":");
 			Console.Write(DateTime.Now.Second.ToString()+",");
-			Console.WriteLine(DateTime.Now.Millisecond.ToString());
+			Console.Write(DateTime.Now.Millisecond.ToString());
 			
-			Console.WriteLine(args[0] +".srt  Обработан...");
+			Console.WriteLine("   "+sSrtFullPath +"  Обработан...");
 			Console.ReadKey(true);
 		}
 	}
