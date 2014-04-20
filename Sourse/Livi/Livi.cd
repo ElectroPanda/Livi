@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ClassDiagram Zoom="1" MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Livi.Program" Collapsed="False">
+    <Position X="3" Y="0.5" Width="1" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="Livi.kartochka" Collapsed="True">
+    <Position X="1.5" Y="0.5" Width="1" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Livi.srtparcl" Collapsed="True">
+    <Position X="5.6" Y="0.5" Width="1" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="True" />
+      <Compartment Name="Fields" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="Livi.heart" Collapsed="True">
+    <Position X="4.3" Y="0.5" Width="1" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="True" />
+    </Compartments>
+  </Class>
+</ClassDiagram>

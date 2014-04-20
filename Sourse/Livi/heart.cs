@@ -37,7 +37,7 @@ namespace Livi
 		
 		public void printt()
 		{
-			Console.WriteLine(this.heartarr.Length+"++++++++");
+			//Console.WriteLine(this.heartarr.Length+"++++++++");
 			
 			for (int i=1;i<this.heartarr.Length;i++)
 			{
