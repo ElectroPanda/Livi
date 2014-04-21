@@ -29,11 +29,11 @@ namespace Livi
 						
 			srtparcl comq =new srtparcl();
 			comq.srtpar(inFile);
-			//comq.brain.printt();
+			comq.brain.printt();
 			
 		     ConsoleAsisst.ConsoleTimePrint();
 			
-			Console.WriteLine("   "+sSrtFullPath +"  Обработан...");
+			ConsoleAsisst.Write("   "+sSrtFullPath +"  Обработан...");
 			//Console.ReadKey(true);
 		}
 	}
