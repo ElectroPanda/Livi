@@ -7,6 +7,7 @@
  * Для изменения этого шаблона используйте Сервис | Настройка | Кодирование | Правка стандартных заголовков.
  */
 using System;
+using System.Text.RegularExpressions;
 
 namespace Livi
 {
@@ -15,17 +16,36 @@ namespace Livi
 	/// </summary>
 	public class WordAsisst
 	{
+		
 		public WordAsisst()
 		{
 		} //end constructor
 		
-		/*public static Boolean HaveCapetalLetter (string a)
+		public static Boolean HaveCapetalLetter (string a)
 		{
-			private Boolean b;
-			b=false;
+			Boolean b;
+			string patternA=@"([A-Z]{1,})";  //([-]{2,})([>]{1,})
+			Regex gex = new Regex(patternA);
+			//Match yalta =gex.Match(instar[i-1]);
+				//sudno=yalta.Success;
+			Match glic = gex.Match(a);
+ 			b=glic.Success;
 			return b;
 		} // End HaveCapetalLetter method
-		*/
+		
+		
+		public static Boolean HaveDot (string a)
+		{
+			Boolean b;
+			string patternA=@"([.]{1,})";  //([-]{2,})([>]{1,})
+			Regex gex = new Regex(patternA);
+			//Match yalta =gex.Match(instar[i-1]);
+				//sudno=yalta.Success;
+			Match glic = gex.Match(a);
+ 			b=glic.Success;
+			return b;
+		} // End HaveCapetalLetter method
+		
 		
 	} // end WordAsiss class 
 } //end name space Livi

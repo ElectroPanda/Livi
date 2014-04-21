@@ -35,7 +35,10 @@ namespace Livi
 			
 			for (int i=0;i<this.arrword.Length;i++)
 			{
-				ConsoleAsisst.WriteLine(" {"+i+"}_"+this.arrword[i]+"<");
+				ConsoleAsisst.Write(" {"+i+"}_"+this.arrword[i]+"<  ");
+				if (WordAsisst.HaveDot(this.arrword[i])) {ConsoleAsisst.WriteLine("Ya!");}
+				else {ConsoleAsisst.WriteLine("Night!");}
+				
 			}//end for
           
 		} // end consoleprint

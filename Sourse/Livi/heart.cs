@@ -45,5 +45,20 @@ namespace Livi
 				
 			} //end for
 		} //end printt method
+		
+		public void PublicNamesArrCreate()
+		{
+			for (int i=1;i<this.heartarr.Length;i++)
+			{
+				for (int a=1;a<this.heartarr[i].arrword.Length;a++)
+				{
+					if (WordAsisst.HaveDot(this.heartarr[i].arrword[a]))
+					{
+						ConsoleAsisst.WriteLine(this.heartarr[i].arrword[a]);
+					}//end zamok if
+				} //end Genry For
+			} //end Harrison for
+		}// end method
+		
 	}//end class
 }//end name space
