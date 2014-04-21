@@ -51,6 +51,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="srtparcl.cs" />
+    <Compile Include="WordAsisst.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Livi.cd" />
