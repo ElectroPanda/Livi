@@ -71,8 +71,16 @@ namespace Livi
 			{
 			Array.Resize(ref this.safulltext, this.safulltext.Length-1);
 			} //end if
-			
 		} // end minuslastline
+		
+			public void minuslastword() // Удаление последней строчки массива строк (только если она пуста)
+		{
+			if (string.IsNullOrEmpty(this.arrword[this.arrword.Length-1])==true)
+			{
+			Array.Resize(ref this.arrword, this.arrword.Length-1);
+			} //end if
+			
+			}// end minuslastword method
 		
 		public void arrwordcreate() //Создание массива слов
 		{

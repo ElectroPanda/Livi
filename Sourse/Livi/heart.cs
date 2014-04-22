@@ -52,7 +52,7 @@ namespace Livi
 			{
 				for (int a=1;a<this.heartarr[i].arrword.Length;a++)
 				{
-					if (WordAsisst.HaveDot(this.heartarr[i].arrword[a]))
+					if (WordAsisst.HaveCapetalLetter(this.heartarr[i].arrword[a]))
 					{
 						ConsoleAsisst.WriteLine(this.heartarr[i].arrword[a]);
 					}//end zamok if

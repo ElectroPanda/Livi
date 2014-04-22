@@ -90,6 +90,7 @@ namespace Livi
    	} //end for
    	karar[a].minuslastline();
    	karar[a].arrwordcreate();
+   	karar[a].minuslastword();
  
    }//end for
 	
@@ -102,6 +103,7 @@ namespace Livi
    
    karar[karar.Length-1].minuslastline();
    karar[karar.Length-1].arrwordcreate();
+   karar[karar.Length-1].minuslastword();
       
    this.brain.clonn(karar);
    
