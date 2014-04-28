@@ -56,7 +56,8 @@ namespace Livi
 					{
 						if ((WordAsisst.HaveDot(this.heartarr[i].arrword[a-1]))==false)
 						{
-						ConsoleAsisst.WriteLine(this.heartarr[i].arrword[a]);
+							ConsoleAsisst.WriteLine(WordAsisst.klacklac(this.heartarr[i].arrword[a]));
+							
 						} //end if Sen Loren
 					}//end zamok if
 				} //end Genry For
