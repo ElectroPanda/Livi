@@ -17,6 +17,7 @@ namespace Livi
 	{
 		public kartochka[] heartarr=new kartochka[2];
 		public string[] saPublicNames=new string[1];
+		public string[] saJustallword=new string[1];
 		
 		public void clonn (kartochka[] a)
 		{
@@ -61,10 +62,23 @@ namespace Livi
 							{
 								Array.Resize(ref saPublicNames, saPublicNames.Length+1);
 								saPublicNames[saPublicNames.Length-1]=WordAsisst.klacklac(this.heartarr[i].arrword[a]);
-								ConsoleAsisst.WriteLine(WordAsisst.klacklac(this.heartarr[i].arrword[a]));
+								ConsoleAsisst.WriteLine(WordAsisst.klacklac(this.heartarr[i].arrword[a])+"<<<<<");
 							}//end if 
+								
+								
+							
 						} //end if Sen Loren
+						else
+						{
+							//тут зрители апладируют а слово надо нормализовывать 
+						} //end else
 					}//end zamok if
+					else
+					{
+						Array.Resize(ref saJustallword, saJustallword.Length+1);
+						saJustallword[saJustallword.Length-1]=WordAsisst.klacklac(this.heartarr[i].arrword[a]);
+						ConsoleAsisst.WriteLine(WordAsisst.klacklac(this.heartarr[i].arrword[a])+"---------");
+					}//end else
 				} //end Genry For
 			} //end Harrison for
 		}// end method
