@@ -62,7 +62,7 @@ namespace Livi
 							{
 								Array.Resize(ref saPublicNames, saPublicNames.Length+1);
 								saPublicNames[saPublicNames.Length-1]=WordAsisst.klacklac(this.heartarr[i].arrword[a]);
-								ConsoleAsisst.WriteLine(WordAsisst.klacklac(this.heartarr[i].arrword[a])+"<<<<<");
+								ConsoleAsisst.WriteLine(WordAsisst.klacklac(this.heartarr[i].arrword[a])+"<<<");
 							}//end if 
 								
 								
@@ -70,14 +70,14 @@ namespace Livi
 						} //end if Sen Loren
 						else
 						{
-							//тут зрители апладируют а слово надо нормализовывать 
+							//Тот случай если слово капитализировано по справедливости - перед словом стоит точка
 						} //end else
 					}//end zamok if
 					else
 					{
 						Array.Resize(ref saJustallword, saJustallword.Length+1);
 						saJustallword[saJustallword.Length-1]=WordAsisst.klacklac(this.heartarr[i].arrword[a]);
-						ConsoleAsisst.WriteLine(WordAsisst.klacklac(this.heartarr[i].arrword[a])+"---------");
+						ConsoleAsisst.WriteLine(WordAsisst.klacklac(this.heartarr[i].arrword[a])+"---");
 					}//end else
 				} //end Genry For
 			} //end Harrison for
