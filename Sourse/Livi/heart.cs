@@ -57,7 +57,7 @@ namespace Livi
 					{
 						if ((WordAsisst.HaveDot(this.heartarr[i].arrword[a-1]))==false)
 						{
-							//ConsoleAsisst.WriteLine(WordAsisst.klacklac(this.heartarr[i].arrword[a]));
+							
 							if (ArrayAsisst.Havethisword(saPublicNames,WordAsisst.klacklac(this.heartarr[i].arrword[a]))==false)
 							{
 								Array.Resize(ref saPublicNames, saPublicNames.Length+1);
@@ -70,7 +70,8 @@ namespace Livi
 						} //end if Sen Loren
 						else
 						{
-							//Тот случай если слово капитализировано по справедливости - перед словом стоит точка
+							//Тот случай если слово капитализировано по справедливости 
+							//- перед словом стоит точка
 						} //end else
 					}//end zamok if
 					else
