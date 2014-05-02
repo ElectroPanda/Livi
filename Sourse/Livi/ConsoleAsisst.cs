@@ -60,7 +60,7 @@ namespace Livi
 			ConsoleAsisst.Write(DateTime.Now.Second.ToString()+",");
 			ConsoleAsisst.Write(DateTime.Now.Millisecond.ToString()+"  ");
 			ConsoleAsisst.Write("Нажмите любую клавишу");
-			//ConsoleAsisst.ReadKey();
+			ConsoleAsisst.ReadKey();
 			
 		} //end console 
 		

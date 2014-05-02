@@ -36,7 +36,7 @@ namespace Livi
 		for (i=1;i<instar.Length;i++) //Обход всех строк
 		{
 			
-			if (string.IsNullOrWhiteSpace(instar[i])==false) //Если строка НЕ пуста и НЕ является пробелом 
+			if (string.IsNullOrEmpty(instar[i])==false) //Если строка НЕ пуста и НЕ является пробелом 
 			{
 				Match sochi = gex.Match(instar[i]);  //Проверка строки
 				Match yalta =gex.Match(instar[i-1]);
@@ -60,7 +60,7 @@ namespace Livi
 	 for (i=1;i<instar.Length;i++) //Обход всех строк
 		{
 			
-	 	if (string.IsNullOrWhiteSpace(instar[i])==false) //Если строка НЕ пуста и НЕ является пробелом 
+	 	if (string.IsNullOrEmpty(instar[i])==false) //Если строка НЕ пуста и НЕ является пробелом 
 			{
 				Match sochi = gex.Match(instar[i]);//Проверка строки
 				//Boolean kiiv=true;  if (i>1) {Match kiev=xeg.Match(instar[i-1]); kiiv=kiev.Success;}

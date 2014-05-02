@@ -51,12 +51,8 @@ namespace Livi
 		{
 			for (int i=1;i<this.heartarr.Length;i++)
 			{
-				this.heartarr[i].minuslastword();
-				ConsoleAsisst.WriteLine("---"+i);
 				for (int a=1;a<this.heartarr[i].arrword.Length;a++)
 				{
-					ConsoleAsisst.WriteLine("***"+this.heartarr[i].arrword[a]);
-					//this.heartarr[i].minuslastword();
 					if (WordAsisst.HaveCapetalLetter(this.heartarr[i].arrword[a]))
 					{
 						if ((WordAsisst.HaveDot(this.heartarr[i].arrword[a-1]))==false)
@@ -66,7 +62,7 @@ namespace Livi
 							{
 								Array.Resize(ref saPublicNames, saPublicNames.Length+1);
 								saPublicNames[saPublicNames.Length-1]=WordAsisst.klacklac(this.heartarr[i].arrword[a]);
-								//ConsoleAsisst.WriteLine(WordAsisst.klacklac(this.heartarr[i].arrword[a])+"<<<");
+								ConsoleAsisst.WriteLine(WordAsisst.klacklac(this.heartarr[i].arrword[a])+"<<<");
 							}//end if 
 								
 								
@@ -82,7 +78,7 @@ namespace Livi
 					{
 						Array.Resize(ref saJustallword, saJustallword.Length+1);
 						saJustallword[saJustallword.Length-1]=WordAsisst.klacklac(this.heartarr[i].arrword[a]);
-						//ConsoleAsisst.WriteLine(WordAsisst.klacklac(this.heartarr[i].arrword[a])+"---");
+						ConsoleAsisst.WriteLine(WordAsisst.klacklac(this.heartarr[i].arrword[a])+"---");
 					}//end else
 				} //end Genry For
 			} //end Harrison for
