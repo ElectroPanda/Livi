@@ -67,7 +67,7 @@ namespace Livi
 		
 		public void minuslastline() // Удаление последней строчки массива строк (только если она пуста)
 		{
-			if (string.IsNullOrEmpty(this.safulltext[this.safulltext.Length-1])==true)
+			if (string.IsNullOrWhiteSpace(this.safulltext[this.safulltext.Length-1])==true)
 			{
 			Array.Resize(ref this.safulltext, this.safulltext.Length-1);
 			} //end if
@@ -75,7 +75,7 @@ namespace Livi
 		
 			public void minuslastword() // Удаление последней строчки массива строк (только если она пуста)
 		{
-			if (string.IsNullOrEmpty(this.arrword[this.arrword.Length-1])==true)
+			if (string.IsNullOrWhiteSpace(this.arrword[this.arrword.Length-1])==true)
 			{
 			Array.Resize(ref this.arrword, this.arrword.Length-1);
 			} //end if
@@ -89,12 +89,13 @@ namespace Livi
 			{
 				
 				Array.Resize(ref this.arrword,this.arrword.Length+1); //добавление ячейки в массив слов
-				for(int a=0;a<=this.safulltext[i].Length-1;a++) //обход БУКВ в обрабатываемоей строке 
+				for(int a=0;a<this.safulltext[i].Length;a++) //обход БУКВ в обрабатываемоей строке 
 				{
 												
 					if ((this.safulltext[i][a]+"")==" ")  //если активная буква пробел
 					{q++; //увеличиваем индекс слова
 					Array.Resize(ref this.arrword,this.arrword.Length+1); //увеличиваем размер массива
+					this.minuslastword();
 					}//end then
 					else
 					{
