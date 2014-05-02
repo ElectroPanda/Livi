@@ -22,7 +22,7 @@ namespace Livi
 			ConsoleAsisst.ConsoleTimePrint();
 			
 			string sSrtFullPath=@"";
-			if (args.Length==0){sSrtFullPath=@"C:\testfiles\srt\in\alot\19.srt";} //tiny
+			if (args.Length==0){sSrtFullPath=@"C:\testfiles\srt\in\tiny.srt";} //tiny
 			else{sSrtFullPath=@"C:\testfiles\srt\in\"+args[0]+".srt";}
 			
 			string[] inFile =System.IO.File.ReadAllLines(sSrtFullPath);
@@ -35,7 +35,7 @@ namespace Livi
 			
 			ConsoleAsisst.Write("   "+sSrtFullPath +"  Обработан...");
 			comq.brain.PublicNamesArrCreate();
-			//ConsoleAsisst.ReadKey();
+			ConsoleAsisst.ReadKey();
 		}
 	}
 }

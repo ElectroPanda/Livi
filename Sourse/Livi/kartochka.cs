@@ -75,11 +75,13 @@ namespace Livi
 		
 			public void minuslastword() // Удаление последней строчки массива строк (только если она пуста)
 		{
+				if (0<this.arrword.Length)
+				{
 			if (string.IsNullOrWhiteSpace(this.arrword[this.arrword.Length-1])==true)
 			{
 			Array.Resize(ref this.arrword, this.arrword.Length-1);
 			} //end if
-			
+				}
 			}// end minuslastword method
 		
 		public void arrwordcreate() //Создание массива слов
