@@ -55,7 +55,7 @@ namespace Livi
 				ConsoleAsisst.WriteLine("---"+i);
 				for (int a=1;a<this.heartarr[i].arrword.Length;a++)
 				{
-					ConsoleAsisst.WriteLine("***"+this.heartarr[i].arrword[a]);
+					ConsoleAsisst.WriteLine("***"+this.heartarr[i].arrword[a]+"***");
 					//this.heartarr[i].minuslastword();
 					if (WordAsisst.HaveCapetalLetter(this.heartarr[i].arrword[a]))
 					{

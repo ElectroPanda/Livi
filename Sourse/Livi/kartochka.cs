@@ -92,10 +92,10 @@ namespace Livi
 				for(int a=0;a<this.safulltext[i].Length;a++) //обход БУКВ в обрабатываемоей строке 
 				{
 												
-					if ((this.safulltext[i][a]+"")==" ")  //если активная буква пробел
+					if (((this.safulltext[i][a]+"")==" "))  //если активная буква пробел
 					{q++; //увеличиваем индекс слова
 					Array.Resize(ref this.arrword,this.arrword.Length+1); //увеличиваем размер массива
-					this.minuslastword();
+					//this.minuslastword();
 					}//end then
 					else
 					{
@@ -107,6 +107,7 @@ namespace Livi
 				
 			}//end for
 			Array.Resize(ref this.arrword,this.arrword.Length-1);
+			
 		}//end arrwordcreate method
        
 		public void copymethod(kartochka a)

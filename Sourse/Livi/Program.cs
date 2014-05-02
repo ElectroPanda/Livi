@@ -22,7 +22,7 @@ namespace Livi
 			ConsoleAsisst.ConsoleTimePrint();
 			
 			string sSrtFullPath=@"";
-			if (args.Length==0){sSrtFullPath=@"C:\testfiles\srt\in\tiny.srt";} //tiny
+			if (args.Length==0){sSrtFullPath=@"C:\testfiles\srt\in\alot\9.srt";} //tiny
 			else{sSrtFullPath=@"C:\testfiles\srt\in\"+args[0]+".srt";}
 			
 			string[] inFile =System.IO.File.ReadAllLines(sSrtFullPath);
