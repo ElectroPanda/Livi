@@ -93,9 +93,13 @@ namespace Livi
 				{
 												
 					if (((this.safulltext[i][a]+"")==" "))  //если активная буква пробел
-					{q++; //увеличиваем индекс слова
+					{
+						if (string.IsNullOrWhiteSpace(this.arrword[q])==false)
+						{
+					q++; //увеличиваем индекс слова
 					Array.Resize(ref this.arrword,this.arrword.Length+1); //увеличиваем размер массива
 					//this.minuslastword();
+						}
 					}//end then
 					else
 					{
