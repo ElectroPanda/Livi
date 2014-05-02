@@ -49,5 +49,4 @@ Livi.exe alot\47
 Livi.exe alot\48
 Livi.exe alot\49
 Livi.exe alot\50
-time
 pause
