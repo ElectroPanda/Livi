@@ -50,7 +50,7 @@ namespace Livi
 		public void PublicNamesArrCreate()
 		{
 			
-			for (int i=1;i<this.heartarr.Length;i++)
+			for (int i=0;i<this.heartarr.Length;i++)
 			{
 				this.heartarr[i].minuslastword();
 				ConsoleAsisst.WriteLine("---"+i);
@@ -60,7 +60,7 @@ namespace Livi
 					//this.heartarr[i].minuslastword();
 					if (WordAsisst.HaveCapetalLetter(this.heartarr[i].arrword[a]))
 					{
-						Boolean asd=(WordAsisst.HaveDot(this.heartarr[i-1].arrword[this.heartarr[i-1].arrword.Length-1]));
+						//Boolean asd=(WordAsisst.HaveDot(this.heartarr[i-1].arrword[this.heartarr[i-1].arrword.Length-1]));
 						if (((a==0)||((WordAsisst.HaveDot(this.heartarr[i].arrword[a-1]))==false)))
 						{
 							
@@ -68,10 +68,24 @@ namespace Livi
 							{
 								Array.Resize(ref saPublicNames, saPublicNames.Length+1);
 								saPublicNames[saPublicNames.Length-1]=WordAsisst.klacklac(this.heartarr[i].arrword[a]);
-								//ConsoleAsisst.WriteLine(WordAsisst.klacklac(this.heartarr[i].arrword[a])+"<<<");
+								//ConsoleAsisst.Write(WordAsisst.klacklac(this.heartarr[i].arrword[a])+"<<<<<<----");
 							}//end if 
-								
-								
+							
+							if(a==0)
+							{
+							if (((i>0)))
+							{
+								if ((this.heartarr[i-1].arrword.Length)>0)
+								{
+								if((WordAsisst.HaveDot(this.heartarr[i-1].arrword[(this.heartarr[i-1].arrword.Length)-1]))==false)
+								{
+								Array.Resize(ref saPublicNames, saPublicNames.Length+1);
+								saPublicNames[saPublicNames.Length-1]=WordAsisst.klacklac(this.heartarr[i].arrword[a]);
+									
+								}
+								}
+							}
+							}
 							
 						} //end if Sen Loren
 						else
