@@ -83,6 +83,20 @@ namespace Livi
 								saPublicNames[saPublicNames.Length-1]=WordAsisst.klacklac(this.heartarr[i].arrword[a]);
 									
 								}
+								else
+						{
+							//Тот случай если слово капитализировано по справедливости 
+							//- перед словом стоит точка
+							string actword=this.heartarr[i].arrword[a];
+							actword.ToLower();
+							actword=WordAsisst.klacklac(actword);
+							if (ArrayAsisst.Havethisword(saJustallword,actword)==false)
+							{
+								Array.Resize(ref saJustallword, saJustallword.Length+1);
+								saJustallword[saJustallword.Length-1]=actword;
+							}
+							
+						} //end else
 								}
 							}
 							}
@@ -92,6 +106,15 @@ namespace Livi
 						{
 							//Тот случай если слово капитализировано по справедливости 
 							//- перед словом стоит точка
+							string actword=this.heartarr[i].arrword[a];
+							actword.ToLower();
+							actword=WordAsisst.klacklac(actword);
+							if (ArrayAsisst.Havethisword(saJustallword,actword)==false)
+							{
+								Array.Resize(ref saJustallword, saJustallword.Length+1);
+								saJustallword[saJustallword.Length-1]=actword;
+							}
+							
 						} //end else
 					}//end zamok if
 					else
@@ -108,6 +131,14 @@ namespace Livi
 			
 			
 		}// end method
+		
+		public void JustWordPrint()
+		{
+			for(int i=1;i<(this.saJustallword.Length);i++)
+			{
+				ConsoleAsisst.WriteLine(i+")     "+this.saJustallword[i]);
+			}
+		}//end method
 		
 	}//end class
 }//end name space
