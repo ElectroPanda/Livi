@@ -55,7 +55,7 @@ namespace Livi
 		
 		public static void ConsoleTimePrint()
 		{
-			ConsoleAsisst.Write(DateTime.Now.Hour.ToString()+":"DateTime.Now.Minute.ToString()+":"+DateTime.Now.Second.ToString()+","+DateTime.Now.Millisecond.ToString());
+			ConsoleAsisst.Write(DateTime.Now.Hour.ToString()+":"+DateTime.Now.Minute.ToString()+":"+DateTime.Now.Second.ToString()+","+DateTime.Now.Millisecond.ToString());
 			//ConsoleAsisst.Write(DateTime.Now.Minute.ToString()+":");
 			//ConsoleAsisst.Write(DateTime.Now.Second.ToString()+",");
 			//ConsoleAsisst.Write(DateTime.Now.Millisecond.ToString()+"  ");

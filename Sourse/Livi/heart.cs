@@ -88,7 +88,10 @@ namespace Livi
 							//Тот случай если слово капитализировано по справедливости 
 							//- перед словом стоит точка
 							string actword=this.heartarr[i].arrword[a];
-							actword.ToLower();
+							//ConsoleAsisst.WriteLine(actword);
+							actword=actword.ToLower();
+							//ConsoleAsisst.ReadKey();
+							//ConsoleAsisst.WriteLine(actword);
 							actword=WordAsisst.klacklac(actword);
 							if (ArrayAsisst.Havethisword(saJustallword,actword)==false)
 							{
@@ -107,7 +110,7 @@ namespace Livi
 							//Тот случай если слово капитализировано по справедливости 
 							//- перед словом стоит точка
 							string actword=this.heartarr[i].arrword[a];
-							actword.ToLower();
+							actword=actword.ToLower();
 							actword=WordAsisst.klacklac(actword);
 							if (ArrayAsisst.Havethisword(saJustallword,actword)==false)
 							{
@@ -137,6 +140,14 @@ namespace Livi
 			for(int i=1;i<(this.saJustallword.Length);i++)
 			{
 				ConsoleAsisst.WriteLine(i+")     "+this.saJustallword[i]);
+			}
+		}//end method
+		
+		public void PublicNamesPrint()
+		{
+			for(int i=1;i<(this.saPublicNames.Length);i++)
+			{
+				ConsoleAsisst.WriteLine(i+")     "+this.saPublicNames[i]);
 			}
 		}//end method
 		

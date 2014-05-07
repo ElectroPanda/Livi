@@ -37,6 +37,8 @@ namespace Livi
 			comq.brain.PublicNamesArrCreate();
 			comq.brain.JustWordPrint();
 			ConsoleAsisst.ReadKey();
+			comq.brain.PublicNamesPrint();
+			ConsoleAsisst.ReadKey();
 		}
 	}
 }
