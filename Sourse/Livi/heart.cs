@@ -50,7 +50,7 @@ namespace Livi
 		public void PublicNamesArrCreate()
 		{
 			
-			for (int i=1;i<this.heartarr.Length;i++)
+			for (int i=0;i<this.heartarr.Length;i++)
 			{
 				this.heartarr[i].minuslastword();
 				ConsoleAsisst.WriteLine("---"+i);
@@ -60,24 +60,66 @@ namespace Livi
 					//this.heartarr[i].minuslastword();
 					if (WordAsisst.HaveCapetalLetter(this.heartarr[i].arrword[a]))
 					{
-						Boolean asd=(WordAsisst.HaveDot(this.heartarr[i-1].arrword[this.heartarr[i-1].arrword.Length-1]));
+						//Boolean asd=(WordAsisst.HaveDot(this.heartarr[i-1].arrword[this.heartarr[i-1].arrword.Length-1]));
 						if (((a==0)||((WordAsisst.HaveDot(this.heartarr[i].arrword[a-1]))==false)))
 						{
-							
+							if(a!=0)
+							{
 							if (ArrayAsisst.Havethisword(saPublicNames,WordAsisst.klacklac(this.heartarr[i].arrword[a]))==false)
 							{
 								Array.Resize(ref saPublicNames, saPublicNames.Length+1);
 								saPublicNames[saPublicNames.Length-1]=WordAsisst.klacklac(this.heartarr[i].arrword[a]);
-								//ConsoleAsisst.WriteLine(WordAsisst.klacklac(this.heartarr[i].arrword[a])+"<<<");
+								//ConsoleAsisst.Write(WordAsisst.klacklac(this.heartarr[i].arrword[a])+"<<<<<<----");
 							}//end if 
-								
-								
+							}
+							
+							if(a==0)
+							{
+							if (i>0)
+							{
+								if ((this.heartarr[i-1].arrword.Length)>0)
+								{
+								if((WordAsisst.HaveDot(this.heartarr[i-1].arrword[(this.heartarr[i-1].arrword.Length)-1]))==false)
+								{
+								Array.Resize(ref saPublicNames, saPublicNames.Length+1);
+								saPublicNames[saPublicNames.Length-1]=WordAsisst.klacklac(this.heartarr[i].arrword[a]);
+									
+								}
+								else
+						{
+							//Тот случай если слово капитализировано по справедливости 
+							//- перед словом стоит точка
+							string actword=this.heartarr[i].arrword[a];
+							//ConsoleAsisst.WriteLine(actword);
+							actword=actword.ToLower();
+							//ConsoleAsisst.ReadKey();
+							//ConsoleAsisst.WriteLine(actword);
+							actword=WordAsisst.klacklac(actword);
+							if (ArrayAsisst.Havethisword(saJustallword,actword)==false)
+							{
+								Array.Resize(ref saJustallword, saJustallword.Length+1);
+								saJustallword[saJustallword.Length-1]=actword;
+							}
+							
+						} //end else
+								}
+							}
+							}
 							
 						} //end if Sen Loren
 						else
 						{
 							//Тот случай если слово капитализировано по справедливости 
 							//- перед словом стоит точка
+							string actword=this.heartarr[i].arrword[a];
+							actword=actword.ToLower();
+							actword=WordAsisst.klacklac(actword);
+							if (ArrayAsisst.Havethisword(saJustallword,actword)==false)
+							{
+								Array.Resize(ref saJustallword, saJustallword.Length+1);
+								saJustallword[saJustallword.Length-1]=actword;
+							}
+							
 						} //end else
 					}//end zamok if
 					else
@@ -94,6 +136,22 @@ namespace Livi
 			
 			
 		}// end method
+		
+		public void JustWordPrint()
+		{
+			for(int i=1;i<(this.saJustallword.Length);i++)
+			{
+				ConsoleAsisst.WriteLine(i+")     "+this.saJustallword[i]);
+			}
+		}//end method
+		
+		public void PublicNamesPrint()
+		{
+			for(int i=1;i<(this.saPublicNames.Length);i++)
+			{
+				ConsoleAsisst.WriteLine(i+")     "+this.saPublicNames[i]);
+			}
+		}//end method
 		
 	}//end class
 }//end name space
