@@ -35,6 +35,9 @@ namespace Livi
 			
 			ConsoleAsisst.Write("   "+sSrtFullPath +"  Обработан...");
 			comq.brain.PublicNamesArrCreate();
+			comq.brain.JustWordPrint();
+			ConsoleAsisst.ReadKey();
+			comq.brain.PublicNamesPrint();
 			ConsoleAsisst.ReadKey();
 		}
 	}
