@@ -1,6 +1,5 @@
 set fileres=C:\testfiles\srt\in\bigload\fileres.txt
 time>%fileres%
-WriteTime.exe
 Livi.exe bigload\1
 Livi.exe bigload\2
 Livi.exe bigload\3
@@ -337,6 +336,5 @@ Livi.exe bigload\333
 Livi.exe bigload\334
 Livi.exe bigload\335
 Livi.exe bigload\336
-WriteTime.exe
 time>>%fileres%
 time

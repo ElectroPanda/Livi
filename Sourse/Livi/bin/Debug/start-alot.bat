@@ -1,4 +1,4 @@
-WriteTime.exe
+
 Livi.exe alot\1
 Livi.exe alot\2
 Livi.exe alot\3
@@ -49,5 +49,4 @@ Livi.exe alot\47
 Livi.exe alot\48
 Livi.exe alot\49
 Livi.exe alot\50
-WriteTime.exe
 pause
