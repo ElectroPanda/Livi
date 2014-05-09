@@ -29,3 +29,8 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+Sourse/Livi.sln
+Sourse/Livi/Properties/AssemblyInfo.cs
+Sourse/Livi/bin/Debug/start-big.bat
+Sourse/Livi/bin/Debug/start-bigload.bat
+Sourse/Livi/bin/Debug/start-tiny.bat
