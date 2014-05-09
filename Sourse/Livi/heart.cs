@@ -63,17 +63,19 @@ namespace Livi
 						//Boolean asd=(WordAsisst.HaveDot(this.heartarr[i-1].arrword[this.heartarr[i-1].arrword.Length-1]));
 						if (((a==0)||((WordAsisst.HaveDot(this.heartarr[i].arrword[a-1]))==false)))
 						{
-							
+							if(a!=0)
+							{
 							if (ArrayAsisst.Havethisword(saPublicNames,WordAsisst.klacklac(this.heartarr[i].arrword[a]))==false)
 							{
 								Array.Resize(ref saPublicNames, saPublicNames.Length+1);
 								saPublicNames[saPublicNames.Length-1]=WordAsisst.klacklac(this.heartarr[i].arrword[a]);
 								//ConsoleAsisst.Write(WordAsisst.klacklac(this.heartarr[i].arrword[a])+"<<<<<<----");
 							}//end if 
+							}
 							
 							if(a==0)
 							{
-							if (((i>0)))
+							if (i>0)
 							{
 								if ((this.heartarr[i-1].arrword.Length)>0)
 								{
