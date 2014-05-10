@@ -18,8 +18,8 @@ namespace Livi
 	{
 		int iSerNumber; // Порядковый номер карточки
 		public int iStartLineN; // Начало - номер строки с номером карточки
-		int [] iaStartTime; //Начало экспозиции
-		int [] iaEndTime; // Конец экспозиции
+	//	int [] iaStartTime; //Начало экспозиции
+	//	int [] iaEndTime; // Конец экспозиции
 		string[] safulltext=new string[1]; //Массив строк карточки
 		public string[] arrword=new string[1]; //Массив слов карточки
 		
