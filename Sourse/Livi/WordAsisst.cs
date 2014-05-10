@@ -23,13 +23,21 @@ namespace Livi
 		
 		public static Boolean HaveCapetalLetter (string a)
 		{
-			Boolean b;
+			Boolean b=false;
+			a=a[0]+"";
+			int sss=a[0];
+			if ((sss>=41)&(sss<=90)) {b=true;}
+			// c 9-10 секунд до Семи!!!!!
+			
+		/*	Console.WriteLine(sss);
+			Console.ReadKey();
 			string patternA=@"([A-Z]{1,})";  //([-]{2,})([>]{1,})
 			Regex gex = new Regex(patternA);
 			//Match yalta =gex.Match(instar[i-1]);
 				//sudno=yalta.Success;
 			Match glic = gex.Match(a);
  			b=glic.Success;
+ 			*/
 			return b;
 		} // End HaveCapetalLetter method
 		
