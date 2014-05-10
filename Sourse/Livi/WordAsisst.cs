@@ -36,27 +36,41 @@ namespace Livi
 		
 		public static Boolean HaveDot (string a)
 		{
-			Boolean b;
+			Boolean b=false;
+			/*
 			string patternA=@"([!?.]{1,})";  //([-]{2,})([>]{1,})
 			Regex gex = new Regex(patternA);
 			//Match yalta =gex.Match(instar[i-1]);
 				//sudno=yalta.Success;
 			Match glic = gex.Match(a);
  			b=glic.Success;
+ 			*/
+ 			string voskl="!";
+ 			string vopr="?";
+ 			string dooot=".";
+ 			int i=a.IndexOf(voskl)+a.IndexOf(vopr)+a.IndexOf(dooot);
+ 			if (i>=0) {b=true;}
 			return b;
+			//прироста скорости нет - но код минимализирован
 		} // End HaveDot method
 		
 				
 		public static Boolean HaveComma (string a)
 		{
-			Boolean b;
+			Boolean b=false;
+			/*
 			string patternA=@"([,]{1,})";  //([-]{2,})([>]{1,})
 			Regex gex = new Regex(patternA);
 			//Match yalta =gex.Match(instar[i-1]);
 				//sudno=yalta.Success;
 			Match glic = gex.Match(a);
  			b=glic.Success;
+ 			*/
+ 			string commma=",";
+ 			int i=a.IndexOf(commma);
+ 			if (i>=0) {b=true;}
 			return b;
+			//прироста скорости нет - но код минимализирован
 		} // End HaveComma method
 		
 		public static string klacklac(string a)

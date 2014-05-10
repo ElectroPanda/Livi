@@ -27,7 +27,10 @@ namespace Livi
 			Boolean c=false;
 			for (int i=0; i<a.Length; i++)
 			     {
-			     	if(a[i]==b) {c=true;}
+			     	//if(a[i]==b) {c=true;}
+			     	int v=0;
+			     	v=String.CompareOrdinal(a[i],b); //работает также 
+			     	if (v==0) {c=true;}
 			     	//c=String.Equals(a[i],b); Работает медленно по сравнегию с простым сравнением
 			     }//end for
 			return c;
