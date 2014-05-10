@@ -23,10 +23,12 @@ namespace Livi
 		
 		public static Boolean Havethisword (string[] a,string b)
 		{
+			// TODO: Вот тут будем увеличивать скорость 
 			Boolean c=false;
 			for (int i=0; i<a.Length; i++)
 			     {
 			     	if(a[i]==b) {c=true;}
+			     	//c=String.Equals(a[i],b); Работает медленно по сравнегию с простым сравнением
 			     }//end for
 			return c;
 		} //end havethisword method

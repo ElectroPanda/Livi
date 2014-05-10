@@ -61,16 +61,8 @@ namespace Livi
 		
 		public static string klacklac(string a)
 		{
-			while (WordAsisst.HaveDot(a))
-			{
-				a=a.Substring(0,a.Length-1);
-			} //end for
-			
-			while (WordAsisst.HaveComma(a))
-			{
-				a=a.Substring(0,a.Length-1);
-			} //end for
-			
+			Char[] Signnn={'.',',','!','?','`',' ','*'};
+			a=a.TrimEnd(Signnn); //Ускорение на треть!!!!!! На треть!!!
 			return a;
 		} // end klacklac method
 		
