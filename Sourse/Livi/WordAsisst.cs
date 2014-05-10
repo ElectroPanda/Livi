@@ -24,7 +24,7 @@ namespace Livi
 		public static Boolean HaveCapetalLetter (string a)
 		{
 			Boolean b=false;
-			a=a[0]+"";
+			
 			int sss=a[0];
 			if ((sss>=41)&(sss<=90)) {b=true;}
 			// c 9-10 секунд до Семи!!!!!
