@@ -19,19 +19,19 @@ namespace Livi
          
 		public static void ReadKey()
 		{
-			//Console.ReadKey();
+			Console.ReadKey();
 			
 		} //end waitt method
 		
 			
 		public static void Write(string a)
 		{
-			//Console.Write(a);
+			Console.Write(a);
 		} // end printline method
 		
 		public static void WriteLine (string a)
 		{
-			//Console.WriteLine(a); 
+			Console.WriteLine(a); 
 			
 		} //end printline twoarg version method
 		
