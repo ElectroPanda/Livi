@@ -19,7 +19,7 @@ namespace Livi
 	{
 		public static void Main(string[] args)
 		{
-			ConsoleAsisst.ConsoleTimePrint();
+			
 			
 			string sSrtFullPath=@"";
 			if (args.Length==0){sSrtFullPath=@"C:\testfiles\srt\in\tiny.srt";} //tiny
@@ -31,13 +31,15 @@ namespace Livi
 			comq.srtpar(inFile);
 			//comq.brain.printt();
 			
-		     ConsoleAsisst.ConsoleTimePrint();
+		     
 			
 			ConsoleAsisst.Write("   "+sSrtFullPath +"  Обработан...");
 			comq.brain.PublicNamesArrCreate();
 			comq.brain.JustWordPrint();
+			ConsoleAsisst.ConsoleTimePrint();
 			ConsoleAsisst.ReadKey();
 			comq.brain.PublicNamesPrint();
+			ConsoleAsisst.ConsoleTimePrint();
 			ConsoleAsisst.ReadKey();
 		}
 	}

@@ -55,11 +55,12 @@ namespace Livi
 		
 		public static void ConsoleTimePrint()
 		{
-			ConsoleAsisst.Write(DateTime.Now.Hour.ToString()+":"+DateTime.Now.Minute.ToString()+":"+DateTime.Now.Second.ToString()+","+DateTime.Now.Millisecond.ToString());
+			DateTime Nooow=DateTime.Now;
+			ConsoleAsisst.WriteLine(Nooow.ToString("HH:mm:ss.ffff"));
 			//ConsoleAsisst.Write(DateTime.Now.Minute.ToString()+":");
 			//ConsoleAsisst.Write(DateTime.Now.Second.ToString()+",");
 			//ConsoleAsisst.Write(DateTime.Now.Millisecond.ToString()+"  ");
-			ConsoleAsisst.Write("Нажмите любую клавишу");
+			ConsoleAsisst.WriteLine("Нажмите любую клавишу");
 			//ConsoleAsisst.ReadKey();
 			
 		} //end console 
