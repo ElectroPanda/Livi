@@ -139,10 +139,13 @@ namespace Livi
 		
 		public void JustWordPrint()
 		{
+			System.IO.StreamWriter swr=System.IO.File.CreateText(@"C:\testfiles\listcomp\srtword.txt");
 			for(int i=1;i<(this.saJustallword.Length);i++)
 			{
-				ConsoleAsisst.WriteLine(i+")     "+this.saJustallword[i]);
+				ConsoleAsisst.WriteLine(i+")))     "+this.saJustallword[i]);
+				swr.WriteLine(this.saJustallword[i]);
 			}
+			swr.Close();
 		}//end method
 		
 		public void PublicNamesPrint()
